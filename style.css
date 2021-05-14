@@ -1,0 +1,327 @@
+/*Här lägger vi till en bakgrundsfärg och en textfont för webbsidan*/
+body{
+    background-color:rgb(189, 189, 196);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*Search texten till vit textfärg*/
+label{
+    color: #fff;
+}
+/*Elementet header som representerar en behållare för introinnehåll  eller navigationlänkar som vi sätter till bakgrundsfärgen mörkgrå länst upp på vår sida*/
+header{
+    background-color:#252529;
+}
+
+header nav{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 0rem;
+    margin-top: -2rem;
+}
+
+header nav.headernav{
+   
+    padding: 10px 25px;
+}
+
+#searchtwo{
+    margin-left: 10rem;
+}
+
+.headlogo{
+    padding-top: 15px;
+}
+
+.links a{
+    color: rgb(209, 201, 201);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-left: 1.2rem;
+    margin-right: 0rem;
+    
+    
+}
+
+.upgradenow{
+    margin:2rem 0 0 0;
+    color:rgb(209, 201, 201);
+}
+
+a.getproyo{
+    padding-right: 20rem;
+}
+
+.links{
+    margin-top: 1.8rem;
+}
+header input {
+    padding: .2rem;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 4px;
+    background: #111;
+    color: #777;
+    
+    border: .05rem solid #555;
+}
+
+header input:focus{
+    outline: none;
+}
+.searchbar{
+    
+    margin-left: 55rem;
+    margin-top: 3rem;
+}
+
+header button.search{
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    color: rgb(201, 201, 201);
+    background: #444;
+    font-size: 1.3rem;
+    padding-top: 6px;
+    
+    
+}
+
+header button.search:hover{
+    background: rgb(109, 108, 108);
+    cursor: pointer;
+}
+
+
+.cloud{
+    width:25px;
+    padding-left: 1rem;
+}
+.bell{
+    position: relative;
+    bottom: -2px;
+    width:25px;
+    padding-left: 1rem;
+    
+}
+.user{
+    position: relative;
+    bottom: -15px;
+    width:50px;
+    padding-left: 1rem;
+    
+}
+.dropdown{
+    text-align: center;
+    
+}
+
+
+
+header select {
+    background: rgb(255, 252, 252);
+    color: rgb(0, 0, 0); 
+    flex: 1; 
+}
+
+
+
+main {
+    max-width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    
+}
+
+main img {
+    padding: 15px;
+    transition: transform .2s;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+main img:hover{
+    -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3); 
+    cursor: pointer;
+}
+
+
+
+section.nextprevbottom {
+    background: #252529;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 1rem;
+   
+    
+}
+
+section.nextprevbottom button{
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    color: rgb(253, 253, 253);
+    background: #252529;
+    padding: .3rem .4rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1rem;
+}
+
+section.nextprevbottom button:hover{
+    cursor: pointer;
+    background: #555;
+}
+
+section.nextprevbottom button:focus {
+    outline: none;
+}
+
+section.nextprevbottom button ion-icon{
+    font-size: 24px;
+    padding-top: 4px;
+}
+
+
+section.nextprevbottom p#pageofpages{
+    color:#777 ;
+}
+
+
+section.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .94);
+    z-index: 1;
+}
+
+section.overlay.hide{
+    display: none;
+    animation: fade .4s ease forwards reverse;
+}
+
+section.overlay.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade .4s ease forwards;
+}
+
+section.overlay img {
+    height: 70%;
+}
+
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1;}
+}
+
+
+
+
+
+@media screen and ( max-width: 480px ){
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: .5rem;
+    } 
+    
+    header{
+        height: 150px;
+    }
+
+    header select.page {
+        display: none;
+        
+    }
+
+    header select.pagemobile {
+        display: flex
+    }
+
+    .searchbar input{
+    margin-left: 3rem;
+    }
+
+    .searchbar button {
+        margin-right: 3rem;
+    }
+
+    header .dropdown{
+        flex-direction: column;
+        
+    }
+
+    .dropdown select {
+        margin: .2rem 4rem;
+    }
+
+
+}
+#pages{
+    color: #fff;
+}
+
+.mainfooter{
+    margin: 0 auto;
+    background: #252529;
+    height: 200px;
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    margin-top: 1rem;
+}
+
+article.vector{
+
+  margin: auto;
+  padding-right: 32rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimg{
+    padding-top: 1rem;
+}
+
+article span{
+margin-left: 1rem;
+margin-bottom: 1rem;
+
+}
+
+h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.lowerfooter{
+    margin: 0 auto;
+    background: #3e3e41;
+    height: 40px;
+    color:rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+    
+}

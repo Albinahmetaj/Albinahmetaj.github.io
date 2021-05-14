@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Flickr Photo Search | Home</title>
+</head>
+<body>
+    <section class="overlay hide" onclick="clickOnImage()"></section>
+
+        <header>
+            <nav class="headernav">
+              
+            <div class="links">
+                <a href="index.html"><img class="headlogo" src="img/text-1620836416518.png" alt="flickr logo" width="290"></a>
+                <a href="#">You</a>
+                <a href="#">Explore</a>
+                <a href="#">Get Pro</a>
+                <a class ="getproyo" href="#">About</a>
+            
+                
+            
+                <input id="searchtwo" type="text" name="search" placeholder="Enter text to search...." required> 
+                <button class="search" name="search" onclick="getSearchedImages();"><ion-icon name="search"></ion-icon></button>
+                <img class ="cloud" src="/img/640px-ICloud_logo.svg.png" alt="cloud logo">
+                <img class="bell" src="/img/new1280098.png" alt="Bell logo">
+                <img class="user" src="img/1070633.png" alt="">
+           
+               
+           
+            </div>
+            <a class ="upgradenow" href="#">Upgrade to pro now to hide ads!</a>
+        
+            </nav>
+            
+
+        <section class="dropdown">
+
+            <select class="tags">
+                <option class ="notags" value="-notthisone">No tags</option>
+                <option value="tags">Tags</option>
+            </select>
+
+            <select class="Sortby">
+                <option value="relevance">Sort by relevancy</option>
+                <option value="date-posted-asc">Sort by date-posted-ascending order</option>
+                <option value="date-posted-desc">Sort by date-posted-descending order</option>
+            </select>
+
+          
+          <select class="page">
+                <option value="50">Show 50 pictures(PC)</option>
+                <option value="25">Show 25 pictures(PC)</option>
+                <option value="10">Show 10 pictures(PC)</option>
+            </select>
+
+           <select class="mobilepage">
+            <option value="50">Show 50 pictures(Phone)</option>
+            <option value="25">Show 25 pictures(Phone)</option>
+            <option value="10">Show 10 pictures(Phone)</option>
+           </select>     
+        </section>
+
+    </header>
+
+
+    <main>
+
+    </main>
+
+    <section class="nextprevbottom">
+        <button class="prev" title="Prev Page" onclick="getPreviousImages()"><ion-icon name="arrow-round-back"></ion-icon></i></button>
+        
+            <div class="article">
+                <p id="pages"></p>
+            </div>
+        <button class="next" title="Next Page" onclick="getNextImages()"><ion-icon name="arrow-round-forward"></ion-icon></i></button>
+    </section>
+
+    <footer class="mainfooter">
+       <article>
+        <img class="headlogo" src="img/text-1620836416518.png" alt="lower logo" width="200">
+        <br><br>
+        <hr>
+        <p class="mainfooterpara">Photo Gallery is a selfmade clientapp where you can search and <br> view pictures nicely with the help and usage of the Flickr Api. <br>With the help of
+        arguments and methods the website has <br> functionality that helps you easily browse through the gallery<br> sorted by relevance, tags, no tags, <br>how many images to display on the pages
+    and more  </p>
+
+           
+        </article>
+<article class="vector">
+       <h3><u>Contact</u></h3>
+       
+            <img class ="testimg" src="img/call.png" alt="" width="40"> <span>+0345-345235</span>
+            
+            <br>
+           
+            <img class ="testimg" src="img/mail.png" alt="" width="40"><span class="mailimgspan">info.github.io.photogallery@gmail.com</span>
+            
+        </article>
+
+        
+    </footer>
+
+    <footer class="lowerfooter">
+        <p>
+            &copy; Albinahmetaj.github.io | Designed by Albin Ahmetaj
+         </p>
+    </footer>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>
